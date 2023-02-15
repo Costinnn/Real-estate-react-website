@@ -1,0 +1,11 @@
+.social {
+  display: flex;
+  gap: 20px;
+  background-color: #707070b4;
+  padding: 10px 20px 5px 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  path {
+    fill: white;
+  }
+}

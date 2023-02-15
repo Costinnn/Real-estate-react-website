@@ -1,0 +1,66 @@
+@use "../../index.scss";
+
+.s2-home {
+  width: calc(100vw - (100% - 100vw));
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+  padding: 30px 10px 0 10px;
+  color: index.$blackish;
+  overflow-x: hidden;
+  > h1 {
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+  }
+
+  .numbers {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 30px;
+    text-align: center;
+
+    p:first-child {
+      font-size: 50px;
+      font-weight: 700;
+      font-family: "Playfair Display", serif;
+      color: index.$orange;
+    }
+    p:last-child {
+      margin-top: 5px;
+      font-size: 20px;
+      color: index.$dim-gray;
+    }
+  }
+
+  .mission {
+    margin-top: 30px;
+
+    > button {
+      margin-top: 30px;
+      padding: 10px 20px 10px 20px;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-btn {
+      margin-right: 20px;
+      background-color: index.$orange;
+      color: white;
+      border: 3px solid index.$orange;
+    }
+
+    .aboutus-btn {
+      background-color: white;
+      border: 3px solid index.$orange;
+      color: index.$dim-gray;
+    }
+  }
+
+  > img {
+    width: calc(100vw - (100% - 100vw));
+    max-width: 1440px;
+    margin: 50px 0 0 -10px;
+  }
+}

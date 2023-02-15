@@ -1,0 +1,49 @@
+@use "../../index.scss";
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -200vw;
+  background-color: index.$onyx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -4;
+  opacity: 0;
+  transition: all 1s ease-in;
+
+
+  svg {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  path {
+    fill: white;
+  }
+
+  ul {
+    li {
+      font-family: "Lato", sans-serif;
+      font-size: 35px;
+      margin-top: 30px;
+
+      img {
+        max-width: 130px;
+      }
+    }
+    li:first-child {
+      margin-top: 50px;
+    }
+  }
+}
+
+.shownav {
+  opacity: 1;
+  z-index: 2 !important;
+  top: 0;
+  right: 0;
+  transition: opacity 1s ease-in;
+}
