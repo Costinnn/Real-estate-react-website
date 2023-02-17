@@ -11,7 +11,7 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto 0 auto;
-    padding: 30px 10px 0 10px;
+    padding: 20px 10px 0 10px;
     color: index.$dim-gray;
     h1 {
       padding-left: 10px;
@@ -22,58 +22,66 @@
 
     > div {
       width: 100%;
-
       .photos {
-        position: relative;
+        display: flex;
+        margin-top: 20px;
         > img {
-          width: 80px;
-          position: absolute;
-          width: 160px;
-          border: 3px solid white;
-          border-radius: 5px;
-        }
-        > img:first-child {
-          transform: rotate(-15deg);
-          top: 20px;
-          right: 150px;
-          z-index: 1;
-        }
-        > img:nth-child(2) {
-          transform: rotate(-5deg);
-          top: 20px;
-          right: 110px;
-          z-index: 2;
-        }
-        > img:nth-child(3) {
-          transform: rotate(5deg);
-          top: 30px;
-          right: 70px;
-          z-index: 3;
-        }
-        > img:nth-child(4) {
-          transform: rotate(15deg);
-          top: 45px;
-          right: 30px;
-          z-index: 4;
-        }
-      }
-      //  HOVER EFFECTS
-      .photos:hover {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
-        > img {
-          position: inherit;
-          transform: rotate(0deg);
-          top: 0;
-          left: 0;
-          width: 100%;
-          border: none;
+          width: 25%;
         }
       }
       > p {
-        padding-top: 280px;
+        padding-top: 30px;
+        padding-bottom: 30px;
       }
+
+      // .photos {
+      //   position: relative;
+      //   > img {
+      //     width: 80px;
+      //     position: absolute;
+      //     width: 160px;
+      //     border: 3px solid white;
+      //     border-radius: 5px;
+      //   }
+      //   > img:first-child {
+      //     transform: rotate(-15deg);
+      //     top: 20px;
+      //     right: 150px;
+      //     z-index: 1;
+      //   }
+      //   > img:nth-child(2) {
+      //     transform: rotate(-5deg);
+      //     top: 20px;
+      //     right: 110px;
+      //     z-index: 2;
+      //   }
+      //   > img:nth-child(3) {
+      //     transform: rotate(5deg);
+      //     top: 30px;
+      //     right: 70px;
+      //     z-index: 3;
+      //   }
+      //   > img:nth-child(4) {
+      //     transform: rotate(15deg);
+      //     top: 45px;
+      //     right: 30px;
+      //     z-index: 4;
+      //   }
+      // }
+      // //  HOVER EFFECTS
+      // .photos:hover {
+      //   display: grid;
+      //   grid-template-columns: 1fr 1fr;
+      //   gap: 5px;
+      //   > img {
+      //     position: inherit;
+      //     transform: rotate(0deg);
+      //     top: 0;
+      //     left: 0;
+      //     width: 100%;
+      //     border: none;
+      //   }
+      // }
     }
   }
 }

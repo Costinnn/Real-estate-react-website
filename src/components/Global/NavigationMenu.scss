@@ -1,16 +1,15 @@
-@use "../../../index.scss";
+@use "../../index.scss";
 
-.navigation {
-  width: 100%;
-  height: 100%;
+.navigationmenu {
+  position: absolute;
   top: 0;
-  right: -200vw;
+  right: -100vw;
+  width: 100%;
+  height: 100vh;
   background-color: index.$onyx;
   text-align: center;
   display: flex;
   justify-content: center;
-  position: relative;
-  z-index: -4;
   opacity: 0;
   transition: all 1s ease-in;
 
@@ -41,7 +40,7 @@
 
 .shownav {
   opacity: 1;
-  z-index: 2 !important;
+  z-index: 2;
   top: 0;
   right: 0;
   transition: opacity 1s ease-in;

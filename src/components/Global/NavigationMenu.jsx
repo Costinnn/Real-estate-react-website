@@ -1,10 +1,10 @@
-import "./Navigation.scss";
+import "./NavigationMenu.scss";
 
-import logo from "../../../assets/Home/logo.png";
+import logo from "../../assets/Global/logo.png";
 
-const Navigation = ({ handleMenu, showNav }) => {
+const NavigationMenu = ({ handleMenu, showNav }) => {
   return (
-    <div className={`navigation ${showNav}`}>
+    <div className={`navigationmenu ${showNav}`}>
       <ul>
         <li>
           <img src={logo} alt="" />
@@ -32,4 +32,4 @@ const Navigation = ({ handleMenu, showNav }) => {
   );
 };
 
-export default Navigation;
+export default NavigationMenu;
