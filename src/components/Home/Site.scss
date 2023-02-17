@@ -23,10 +23,23 @@
     > div {
       width: 100%;
       .photos {
-        display: flex;
-        margin-top: 20px;
-        > img {
-          width: 25%;
+        width: 100%;
+        .box {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          .number {
+            width: 25%;
+            margin: 0 30px 0 30px;
+          }
+          > img {
+            width: 60%;
+          }
+        }
+        div:nth-of-type(1),
+        div:nth-of-type(3) {
+          display: flex;
+          justify-content: flex-end;
         }
       }
       > p {
