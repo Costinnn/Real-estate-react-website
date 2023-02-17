@@ -1,4 +1,4 @@
-@use "../../index.scss";
+@use "../../../index.scss";
 
 .navigation {
   width: 100%;
@@ -13,7 +13,6 @@
   z-index: -4;
   opacity: 0;
   transition: all 1s ease-in;
-
 
   svg {
     position: absolute;

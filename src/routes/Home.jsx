@@ -1,6 +1,8 @@
-import Navigation from "../components/Home/Navigation";
-import Social from "../components/Home/Social";
+import Navigation from "../components/Home/s1/Navigation";
+import Social from "../components/Home/s1/Social";
 import About from "../components/Home/About";
+import Gallery from "../components/Home/Gallery";
+import Site from "../components/Home/Site";
 
 import { useState } from "react";
 
@@ -57,6 +59,8 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <Gallery />
+      <Site />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import "./Navigation.scss";
 
-import logo from "../../assets/Home/logo.png";
+import logo from "../../../assets/Home/logo.png";
 
 const Navigation = ({ handleMenu, showNav }) => {
   return (
