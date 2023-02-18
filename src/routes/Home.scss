@@ -8,15 +8,11 @@
   position: relative;
   display: flex;
   justify-content: center;
+  z-index: -1;
+  background-image: url("../assets/Home/mobile-bg.jpg");
+  background-position: center;
+  background-size: cover;
 
-
-  > img {
-    max-height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -3;
-  }
   .black-filter {
     position: absolute;
     z-index: -2;
@@ -72,7 +68,7 @@
       position: absolute;
       z-index: -2;
       top: 100px;
-      left: 50%;
+      right: -200px;
       width: 400px;
     }
 
@@ -80,7 +76,36 @@
       position: absolute;
       bottom: 0;
       right: calc(50% - 76px);
-      z-index: -1;
+      z-index: 1;
     }
+  }
+
+  @media (min-width: 800px) {
+    .home-s1-content {
+      padding: 40px 20px 0 20px;
+
+      h1 {
+        margin-top: 300px;
+        font-size: 70px;
+        font-weight: 600;
+      }
+
+      .text-design1,
+      .text-design2,
+      .text-design3 {
+        font-size: 25px;
+      }
+
+      > img {
+        right: 0px;
+        width: 500px;
+      }
+      .social {
+        right: calc(50% - 122.5px);
+      }
+    }
+  }
+  @media (min-width: 600px) {
+    background-image: url("../assets/Home/desktop-bg.jpg");
   }
 }

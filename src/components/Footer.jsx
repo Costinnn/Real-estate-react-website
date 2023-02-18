@@ -38,8 +38,8 @@ const Footer = () => {
             <p>Casa de 95mp</p>
             <p>Casa de 110mp</p>
             <p>Casa de 130mp</p>
+            <button>VEZI CASE</button>
           </div>
-          <button>VEZI CASE</button>
         </div>
         <p>Copyright 2023 Villas Residence</p>
       </div>

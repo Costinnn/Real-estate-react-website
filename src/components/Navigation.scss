@@ -1,7 +1,7 @@
 @use "../index.scss";
 
 .navigation {
-  width: calc(100vw - (100% - 100vw));
+  width: calc(100vw - (100vw - 100%));
   max-width: 1440px;
   margin: 0 auto 0 auto;
   position: relative;
@@ -22,6 +22,18 @@
   > svg {
     path {
       fill: white;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .navigation {
+    .logo {
+      font-size: 35px;
+    }
+
+    > svg {
+      display: none;
     }
   }
 }

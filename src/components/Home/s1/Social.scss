@@ -5,7 +5,28 @@
   padding: 10px 20px 5px 20px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  path {
-    fill: white;
+
+  svg{
+    width: 24px;
+    height: 24px;
+    path {
+      fill: white;
+    }
+  }
+ 
+}
+
+@media (min-width: 800px){
+  .social {
+    display: flex;
+    gap: 40px;
+    background-color: #707070b4;
+    padding: 15px 30px 10px 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    svg{
+      width: 35px;
+      height: 35px;
+    }
   }
 }

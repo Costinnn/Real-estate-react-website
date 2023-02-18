@@ -6,7 +6,7 @@ import "./Gallery.scss";
 
 const Gallery = () => {
   return (
-    <>
+    <div className="gallery-container">
       <h1 className="gallery-title">Case Villas Residence</h1>
       <div className="gallery">
         {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -46,7 +46,7 @@ const Gallery = () => {
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

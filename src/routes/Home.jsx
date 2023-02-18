@@ -5,16 +5,15 @@ import Site from "../components/Home/Site";
 
 import "./Home.scss";
 
-import backgroundImg from "../assets/Home/1.jpg";
-import frontImg from "../assets/Home/2.jpg";
+import mobileBg from "../assets/Home/mobile-bg.jpg";
+import desktopBg from "../assets/Home/desktop-bg.jpg";
+import frontImg from "../assets/Home/header-img.jpg";
 
 const Home = () => {
   return (
     <>
       <div className="home-section1">
-        <img src={backgroundImg} alt="" />
         <div className="black-filter"></div>
-
         <div className="home-s1-content">
           <p className="text-design1">Rafinament</p>
           <h1>Case de lux la marginea orasului</h1>

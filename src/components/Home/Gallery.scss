@@ -1,40 +1,76 @@
 @use "../../index.scss";
-.gallery-title {
-  font-size: 35px;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  color: index.$orange;
-  padding-left: 10px;
-}
-.gallery {
-  overflow-x: hidden;
-  overflow-x: scroll;
-  width: calc(100vw - (100% - 100vw));
+
+.gallery-container {
+  width: calc(100vw - (100vw - 100%));
   max-width: 1440px;
   margin: 0 auto 0 auto;
 
-  //   position: relative;
+  .gallery-title {
+    margin-top: 10px;
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: index.$orange;
+    padding-left: 10px;
+  }
+  .gallery {
+    overflow-x: hidden;
+    overflow-x: scroll;
+    width: calc(100vw - (100vw - 100%));
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
 
-  //   > svg {
-  //     position: absolute;
-  //     top: 20px;
-  //     width: 40px;
-  //     height: 40px;
-  //     fill: index.$orange;
-  //   }
-  //   > svg:first-of-type {
-  //     left: 10px;
-  //   }
+    //   position: relative;
 
-  //   > svg:last-of-type {
-  //     right: 10px;
-  //   }
+    //   > svg {
+    //     position: absolute;
+    //     top: 20px;
+    //     width: 40px;
+    //     height: 40px;
+    //     fill: index.$orange;
+    //   }
+    //   > svg:first-of-type {
+    //     left: 10px;
+    //   }
 
-  .content {
-    width: calc(
-      400% - 160px
-    ); // for more images in gallery modify here 1/2 (4x40px = 160px)
-    display: flex;
-    gap: 10px;
+    //   > svg:last-of-type {
+    //     right: 10px;
+    //   }
+
+    .content {
+      width: calc(
+        400% - 160px
+      ); // for more images in gallery modify here 1/2 (4x40px = 160px)
+      display: flex;
+      gap: 10px;
+    }
+  }
+  @media (min-width: 800px) {
+    .gallery-title {
+      font-size: 50px;
+    }
+    .gallery {
+      .content {
+        padding-top: 20px;
+      }
+    }
+  }
+  @media (min-width: 900px){
+    .gallery {
+      .content {
+        width: calc(
+        400% - 480px
+      );
+      }
+    }
+  }
+  @media (min-width: 1200px){
+    .gallery {
+      .content {
+        width: calc(
+        400% - 1200px
+      );
+      }
+    }
   }
 }

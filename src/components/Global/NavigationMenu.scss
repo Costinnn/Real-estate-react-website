@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   opacity: 0;
-  transition: all 1s ease-in;
+  transition: all 0.5s ease-in;
 
   svg {
     position: absolute;
@@ -43,5 +43,42 @@
   z-index: 2;
   top: 0;
   right: 0;
-  transition: opacity 1s ease-in;
+  transition: opacity 0.5s ease-in;
+}
+
+@media (min-width: 800px) {
+  .navigationmenu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 70%;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 1;
+
+
+    svg {
+      display: none;
+    }
+
+
+    ul {
+      display: flex;
+      gap: 10px;
+      li {
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+        margin-top: 0px;
+        padding: 10px 10px 10px 10px;
+        img {
+          display: none;
+        }
+      }
+      li:first-child {
+        margin-top: 0px;
+      }
+    }
+  }
 }

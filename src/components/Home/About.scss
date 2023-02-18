@@ -1,7 +1,7 @@
 @use "../../index.scss";
 
 .s2-home {
-  width: calc(100vw - (100% - 100vw));
+  width: calc(100vw - (100vw - 100%));
   max-width: 1440px;
   margin: 0 auto 0 auto;
   padding: 30px 10px 0 10px;
@@ -62,5 +62,82 @@
     width: calc(100vw - (100% - 100vw));
     max-width: 1440px;
     margin: 50px 0 0 -10px;
+  }
+}
+
+@media (min-width: 800px) {
+  .s2-home {
+    > h1 {
+      font-size: 50px;
+      max-width: 700px;
+    }
+    > div {
+      display: grid;
+      grid: "mission numbers";
+      column-gap: 20px;
+    }
+
+    .numbers {
+      grid-area: numbers;
+      p:first-child {
+        font-size: 70px;
+      }
+      p:last-child {
+        font-size: 25px;
+      }
+    }
+
+    .mission {
+      grid-area: mission;
+      max-width: 500px;
+
+      > button {
+        padding: 5px 25px 5px 25px;
+        font-size: 30px;
+      }
+
+      .contact-btn {
+        margin-right: 20px;
+        background-color: index.$orange;
+        color: white;
+        border: 3px solid index.$orange;
+      }
+
+      .aboutus-btn {
+        background-color: white;
+        border: 3px solid index.$orange;
+        color: index.$dim-gray;
+      }
+    }
+
+    > img {
+      width: calc(100vw - (100vw - 100%));
+      max-width: 1440px;
+      margin: 50px 0 0 -10px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .s2-home {
+    .numbers {
+      p:first-child {
+        font-size: 90px;
+      }
+      p:last-child {
+        font-size: 30px;
+      }
+    }
+
+    .mission {
+      max-width: 800px;
+      font-size: 25px;
+    }
+
+    > img {
+      width: calc(100vw - (100vw - 100%));
+      max-width: 1440px;
+      margin: 50px 0 0 -10px;
+    }
   }
 }

@@ -16,7 +16,7 @@ const Site = () => {
         <h1>Etape santier</h1>
         <div>
           <div className="photos">
-            <div className="box">
+            <div className="photo-box">
               <img className="number" src={no1} alt="" />
               <img src={s1} alt="" />
             </div>
@@ -24,7 +24,7 @@ const Site = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem et
               vitae laudantium rerum voluptates.
             </p>
-            <div className="box">
+            <div className="photo-box">
               <img src={s2} alt="" />
               <img className="number" src={no2} alt="" />
             </div>
@@ -32,7 +32,7 @@ const Site = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem et
               vitae laudantium rerum voluptates.
             </p>
-            <div className="box">
+            <div className="photo-box">
               <img className="number" src={no3} alt="" />
               <img src={s3} alt="" />
             </div>
@@ -40,7 +40,7 @@ const Site = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem et
               vitae laudantium rerum voluptates.
             </p>
-            <div className="box">
+            <div className="photo-box">
               <img src={s4} alt="" />
               <img className="number" src={no4} alt="" />
             </div>
