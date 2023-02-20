@@ -3,10 +3,17 @@
   margin: 0;
   padding: 0;
 }
-li{
+li {
   list-style: none;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
 
 //     font-family: 'Lato', sans-serif; 100i 400 700b
 //     font-family: 'Playfair Display', serif;  400/400i  500/500i
@@ -15,7 +22,7 @@ $blackish: #202020;
 $onyx: #3f3f3f;
 $dim-gray: #707070;
 $yellow: #ffdf6c;
-$orange: #FF6700;
+$orange: #ff6700;
 
 // Blackish: #202020
 // Dark Grey: #3F3F3F

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./NavigationMenu.scss";
 
 import logo from "../../assets/Global/logo.png";
@@ -7,12 +9,30 @@ const NavigationMenu = ({ handleMenu, showNav }) => {
     <div className={`navigationmenu ${showNav}`}>
       <ul>
         <li>
-          <img src={logo} alt="" />
+          <Link to="/" onClick={handleMenu}>
+            <img src={logo} alt="" />
+          </Link>
         </li>
-        <li>Modele case</li>
-        <li>Stadiu santier</li>
-        <li>Despre noi</li>
-        <li>Contact</li>
+        <li>
+          <Link to="houses" onClick={handleMenu}>
+            Modele case
+          </Link>
+        </li>
+        <li>
+          <Link to="/site" onClick={handleMenu}>
+            Stadiu santier
+          </Link>
+        </li>
+        <li>
+          <Link to="/aboutus" onClick={handleMenu}>
+            Despre noi
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" onClick={handleMenu}>
+            Contact
+          </Link>
+        </li>
       </ul>
       <svg
         onClick={handleMenu}

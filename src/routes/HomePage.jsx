@@ -3,13 +3,11 @@ import About from "../components/Home/About";
 import Gallery from "../components/Home/Gallery";
 import Site from "../components/Home/Site";
 
-import "./Home.scss";
+import "./HomePage.scss";
 
-import mobileBg from "../assets/Home/mobile-bg.jpg";
-import desktopBg from "../assets/Home/desktop-bg.jpg";
 import frontImg from "../assets/Home/header-img.jpg";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <div className="home-section1">
@@ -30,4 +28,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
