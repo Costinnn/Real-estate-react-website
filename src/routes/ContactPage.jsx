@@ -41,17 +41,19 @@ const ContactPage = () => {
         <div>
           <span className="material-symbols-outlined">map</span>
           <h3>Viziteaza-ne birou</h3>
-          <p>Soseaua Nicolina, nr. 1, Iasi 700522</p>
+          <a href="http://">Soseaua Nicolina, nr. 1, Iasi 700522</a>
         </div>
         <div>
           <span className="material-symbols-outlined">phone_iphone</span>
           <h3>Suna-ne</h3>
-          <p>0752 000 000</p>
+          <a href="tel:0752 000 000">0752 000 000</a>
         </div>
         <div>
           <span className="material-symbols-outlined">contact_mail</span>
           <h3>Trimite un email</h3>
-          <p>contact@villasresidence.ro</p>
+          <a href="mailto:contact@villasresidence.ro">
+            contact@villasresidence.ro
+          </a>
         </div>
       </section>
     </div>

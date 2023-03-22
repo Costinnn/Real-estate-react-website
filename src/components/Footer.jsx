@@ -2,6 +2,8 @@ import "./Footer.scss";
 
 import logo from "../assets/Global/logo.png";
 
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer>
@@ -26,19 +28,21 @@ const Footer = () => {
               <b>BIROU VANZARI</b>
               <br /> Soseaua Nicolina, nr. 1, Iasi 700522
             </p>
-            <p>
+            <a href="tel:0752 000 000">
               <b> TELEFON:</b> 0752 000 000
-            </p>
-            <p>
+            </a>
+            <br />
+            <a href="mailto:contact@villasresidence.ro">
               <b>EMAIL:</b> contact@villasresidence.ro
-            </p>
+            </a>
           </div>
           <div className="houses">
             <h3>CASE DISPONIBILE</h3>
             <p>Casa de 95mp</p>
             <p>Casa de 110mp</p>
             <p>Casa de 130mp</p>
-            <button>VEZI CASE</button>
+            <br />
+            <Link to="/houses">VEZI CASE</Link>
           </div>
         </div>
         <p>Copyright 2023 Villas Residence</p>

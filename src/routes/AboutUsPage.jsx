@@ -1,6 +1,7 @@
 import "./AboutUsPage.scss";
 
 import s1img from "../assets/AboutUs/s1.jpg";
+import { Link } from "react-router-dom";
 
 const AboutUsPage = () => {
   return (
@@ -30,15 +31,20 @@ const AboutUsPage = () => {
         </h1>
         <div>
           <span className="material-symbols-outlined">phone_iphone</span>
-          <p>0752 000 000</p>
+          <br />
+          <a href="tel:0752 000 000">0752 000 000</a>
         </div>
         <div>
           <span className="material-symbols-outlined">contact_mail</span>
-          <p>contact@villasresidence.ro</p>
+          <br />
+          <a href="mailto:contact@villasresidence.ro">
+            contact@villasresidence.ro
+          </a>
         </div>
         <div>
           <span className="material-symbols-outlined">event_available</span>
-          <p>Programeaza o vizita</p>
+          <br />
+          <Link to="/contact">Programeaza o vizita</Link>
         </div>
       </section>
       <div className="content">

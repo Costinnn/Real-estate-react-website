@@ -1,5 +1,7 @@
 import "./About.scss";
 
+import { Link } from "react-router-dom";
+
 import aboutImg from "../../assets/Home/about.jpg";
 
 const About = () => {
@@ -23,8 +25,14 @@ const About = () => {
             persoane care-si iubesc familiile. Locuinte care vor servi cel putin
             pentru 3 generatii.
           </p>
-          <button className="contact-btn">Contact</button>
-          <button className="aboutus-btn">Despre noi</button>
+          <div>
+            <Link to="/contact" className="contact-btn">
+              Contact
+            </Link>
+            <Link to="/aboutus" className="aboutus-btn">
+              Despre noi
+            </Link>
+          </div>
         </div>
       </div>
       <img src={aboutImg} alt="" />

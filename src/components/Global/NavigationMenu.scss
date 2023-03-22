@@ -6,7 +6,8 @@
   right: -100vw;
   width: 100%;
   height: 100vh;
-  background-color: index.$onyx;
+  background-color: index.$dim-gray;
+  color: index.$blackish;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -19,7 +20,7 @@
     right: 15px;
   }
   path {
-    fill: white;
+    fill: index.$blackish;
   }
 
   ul {

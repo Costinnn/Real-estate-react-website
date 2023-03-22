@@ -5,17 +5,17 @@ footer {
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
-    index.$blackish 30%
+    index.$dim-gray 30%
   );
-  color: index.$dim-gray;
+  color: index.$blackish;
   margin-top: -30px;
   padding-top: 60px;
   text-align: center;
-  @media (min-width: 1000px){
+  @media (min-width: 1000px) {
     background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0),
-      index.$blackish 50%
+      index.$dim-gray 50%
     );
   }
 
@@ -41,9 +41,11 @@ footer {
         font-style: italic;
         font-size: 25px;
       }
+      a,
       p {
         margin-top: 5px;
       }
+      a:hover,
       p:hover {
         color: white;
       }
@@ -54,7 +56,7 @@ footer {
       }
     }
     .houses {
-      button {
+      a {
         margin-top: 10px;
         padding: 5px 20px 5px 20px;
         font-size: 20px;
@@ -63,7 +65,7 @@ footer {
         background-color: index.$yellow;
         color: index.$blackish;
       }
-      button:hover {
+      a:hover {
         background-color: white;
       }
     }

@@ -35,26 +35,26 @@
 
   .mission {
     margin-top: 30px;
-
-    > button {
+    div {
       margin-top: 30px;
-      padding: 10px 20px 10px 20px;
-      font-size: 20px;
-      border: none;
-      border-radius: 5px;
-    }
+      a {
+        padding: 10px 20px 10px 20px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+      }
+      .contact-btn {
+        margin-right: 20px;
+        background-color: index.$orange;
+        color: white;
+        border: 3px solid index.$orange;
+      }
 
-    .contact-btn {
-      margin-right: 20px;
-      background-color: index.$orange;
-      color: white;
-      border: 3px solid index.$orange;
-    }
-
-    .aboutus-btn {
-      background-color: white;
-      border: 3px solid index.$orange;
-      color: index.$dim-gray;
+      .aboutus-btn {
+        background-color: white;
+        border: 3px solid index.$orange;
+        color: index.$dim-gray;
+      }
     }
   }
 
@@ -90,23 +90,24 @@
     .mission {
       grid-area: mission;
       max-width: 500px;
+      div {
+        a {
+          padding: 5px 25px 5px 25px;
+          font-size: 30px;
+        }
 
-      > button {
-        padding: 5px 25px 5px 25px;
-        font-size: 30px;
-      }
+        .contact-btn {
+          margin-right: 20px;
+          background-color: index.$orange;
+          color: white;
+          border: 3px solid index.$orange;
+        }
 
-      .contact-btn {
-        margin-right: 20px;
-        background-color: index.$orange;
-        color: white;
-        border: 3px solid index.$orange;
-      }
-
-      .aboutus-btn {
-        background-color: white;
-        border: 3px solid index.$orange;
-        color: index.$dim-gray;
+        .aboutus-btn {
+          background-color: white;
+          border: 3px solid index.$orange;
+          color: index.$dim-gray;
+        }
       }
     }
 

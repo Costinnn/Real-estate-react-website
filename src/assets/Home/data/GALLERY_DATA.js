@@ -5,6 +5,7 @@ import h4 from "./h4.jpg";
 
 const GALLERY_DATA = [
   {
+    title: "Casa model A",
     bedroom: "3",
     bathroom: "2",
     houseArea: "120",
@@ -15,6 +16,7 @@ const GALLERY_DATA = [
     img: h1,
   },
   {
+    title: "Casa model A",
     bedroom: "4",
     bathroom: "2",
     houseArea: "135",
@@ -25,6 +27,7 @@ const GALLERY_DATA = [
     img: h2,
   },
   {
+    title: "Casa model A",
     bedroom: "4",
     bathroom: "1",
     houseArea: "120",
@@ -35,6 +38,7 @@ const GALLERY_DATA = [
     img: h3,
   },
   {
+    title: "Casa model A",
     bedroom: "5",
     bathroom: "2",
     houseArea: "145",
