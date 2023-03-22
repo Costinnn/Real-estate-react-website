@@ -1,0 +1,107 @@
+@use "../index.scss";
+
+.contactpage {
+  width: calc(100vw - (100vw - 100%));
+  .section1 {
+    width: 100%;
+    background-color: index.$blackish;
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    margin-top: -70px;
+    .content {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto 0 auto;
+      position: relative;
+      > div {
+        text-align: center;
+        padding: 0 30px 0 30px;
+        .bg-text {
+          position: absolute;
+          top: 50px;
+          left: 30px;
+          font-family: "Londrina Outline", cursive;
+          color: index.$dim-gray;
+        }
+        > h1 {
+          font-size: 35px;
+        }
+        > p {
+          text-align: left;
+          margin-top: 20px;
+        }
+      }
+      > form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+
+        > div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+        input {
+          width: 90%;
+          max-width: 380px;
+          padding: 7px 10px 7px 10px;
+          font-size: 16px;
+          outline: none;
+          border: none;
+          background-color: index.$dim-gray;
+          color: white;
+          letter-spacing: 1px;
+        }
+        input::placeholder {
+          color: white;
+        }
+
+        button {
+          padding: 10px 15px 10px 15px;
+          margin-top: 30px;
+          border: none;
+          outline: none;
+          background-color: white;
+          color: index.$blackish;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+  .section2 {
+    width: 100%;
+    max-width: 1440px;
+    margin: 30px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    > div {
+      border: 1px solid index.$dim-gray;
+      width: 300px;
+      height: 230px;
+      text-align: center;
+      padding: 20px;
+      color: index.$dim-gray;
+      span {
+        font-size: 60px;
+      }
+      h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        color: index.$blackish;
+      }
+      p {
+        margin-top: 5px;
+      }
+    }
+  }
+}
