@@ -2,8 +2,8 @@
 
 .site {
   width: calc(100vw - (100vw - 100%));
-  background-image: url("../../assets/Home/site-background.png");
-  background-position: center;
+  background-image: url("../../assets/Home/bg.jpg");
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -12,7 +12,7 @@
     max-width: 1440px;
     margin: 0 auto 0 auto;
     padding: 20px 10px 0 10px;
-    color: index.$dim-gray;
+    color: index.$blackish;
     h1 {
       padding-left: 10px;
       font-family: "Playfair Display", serif;

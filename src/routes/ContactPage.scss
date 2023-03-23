@@ -4,7 +4,7 @@
   width: calc(100vw - (100vw - 100%));
   .section1 {
     width: 100%;
-    background-color: index.$blackish;
+    background-color: index.$dim-gray;
     color: white;
     padding-top: 120px;
     padding-bottom: 30px;
@@ -19,10 +19,12 @@
         padding: 0 30px 0 30px;
         .bg-text {
           position: absolute;
-          top: 50px;
-          left: 30px;
+          bottom: -150px;
+          left: -130px;
           font-family: "Londrina Outline", cursive;
-          color: index.$dim-gray;
+          color: index.$orange;
+          transform: rotate(-90deg);
+          font-size: 50px;
         }
         > h1 {
           font-size: 35px;
@@ -102,6 +104,30 @@
       a {
         margin-top: 5px;
       }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .section1 {
+      .content {
+        display: flex;
+        align-items: center;
+        > div {
+          width: 50%;
+          .bg-text {
+            bottom: 50px;
+            left: -150px;
+            font-size: 70px;
+          }
+        }
+        > form {
+          width: 50%;
+        }
+      }
+    }
+    .section2{
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
 }

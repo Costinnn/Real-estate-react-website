@@ -14,9 +14,11 @@ const HousesPage = () => {
         <p>
           Suprafete utile intre 95mp si 120mp, iar teren intre 350mp si 500mp
         </p>
-        {GALLERY_DATA.map((house, index) => (
-          <HouseTemplate house={house} key={index} />
-        ))}
+        <div className="houses-list">
+          {GALLERY_DATA.map((house, index) => (
+            <HouseTemplate house={house} key={index} />
+          ))}
+        </div>
       </section>
       <section className="section2">
         <p>Case noi la cheie</p>

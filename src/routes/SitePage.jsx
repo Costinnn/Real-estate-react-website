@@ -8,6 +8,7 @@ import backgroundImg from "../assets/Site/site-bg.jpg";
 const SitePage = () => {
   return (
     <div className="sitepage">
+      <div className="nav-bg"></div>
       <section className="section1">
         <img src={backgroundImg} alt="" />
         <div className="content">

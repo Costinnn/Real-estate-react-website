@@ -13,9 +13,6 @@
     max-width: 1440px;
     margin: 40px auto 0 auto;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     > h1 {
       font-size: 35px;
@@ -25,6 +22,12 @@
       max-width: 300px;
       color: index.$onyx;
       font-weight: 600;
+      margin: 0 auto;
+    }
+    .houses-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
   .section2 {
@@ -63,9 +66,8 @@
     width: 100%;
     max-width: 1440px;
     padding: 0 20px;
-    margin-top: 30px;
-    h2 {
-    }
+    margin: 30px auto 0 auto;
+
     ul {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -79,6 +81,41 @@
           transform: rotate(90deg);
           height: 19px;
         }
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .section1 {
+      padding: 0 20px;
+      .houses-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 30px;
+        a {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  @media (min-width: 1100px) {
+    .section1 {
+      > h1 {
+        font-size: 50px;
+      }
+      > p {
+        font-size: 25px;
+        max-width: 500px;
+      }
+      .houses-list {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+    .section3 {
+      h2 {
+        font-size: 30px;
       }
     }
   }

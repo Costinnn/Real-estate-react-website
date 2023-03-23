@@ -6,6 +6,7 @@ import NavFooter from "./routes/NavFooter";
 import AboutUsPage from "./routes/AboutUsPage";
 import ContactPage from "./routes/ContactPage";
 import HousesPage from "./routes/HousesPage";
+import HousePage from "./routes/HousePage";
 import SitePage from "./routes/SitePage";
 
 import { Route, Routes } from "react-router-dom";
@@ -21,6 +22,7 @@ function App() {
           <Route path="aboutus" element={<AboutUsPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="houses" element={<HousesPage />} />
+          <Route path="houses/:id" element={<HousePage />} />
           <Route path="site" element={<SitePage />} />
         </Route>
       </Routes>

@@ -38,11 +38,16 @@ const Footer = () => {
           </div>
           <div className="houses">
             <h3>CASE DISPONIBILE</h3>
-            <p>Casa de 95mp</p>
-            <p>Casa de 110mp</p>
-            <p>Casa de 130mp</p>
+            <Link to="/houses/1">Casa de 95mp</Link>
             <br />
-            <Link to="/houses">VEZI CASE</Link>
+            <Link to="/houses/2">Casa de 110mp</Link>
+            <br />
+            <Link to="/houses/3">Casa de 130mp</Link>
+            <br />
+            <br />
+            <Link to="/houses" className="btn">
+              VEZI CASE
+            </Link>
           </div>
         </div>
         <p>Copyright 2023 Villas Residence</p>
